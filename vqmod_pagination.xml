@@ -1,0 +1,20 @@
+<modification>
+	<id>Фиксы пагинации</id>
+	<version>1.5.3.1</version>
+	<vqmver>2.1.5</vqmver>
+	<author>ulv8888</author>
+    
+ 	<file name="system/library/pagination.php">
+		<operation>
+			<search position="replace" offset="3"><![CDATA[public $text_first = '|&lt;';]]></search>
+			<add><![CDATA[
+    public $text_first = '';
+	public $text_last = '';
+	public $text_next = 'Вперед &rarr;';
+	public $text_prev = '&larr; Назад';
+            ]]></add>
+		</operation>
+	</file>
+   
+
+</modification>
